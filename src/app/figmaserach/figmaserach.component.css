@@ -20,6 +20,8 @@
 .rightbar{
     background-color:#fff; 
     height: 700px;
+    margin-top: 65px;
+
 }
 
 
@@ -29,6 +31,7 @@
     /* min-height: 25%; */
     min-height: 400px;
     overflow:scroll;
+    margin-top: 34px;
 }
 
 
@@ -37,7 +40,7 @@
 
     background-color: #2c2c2c; 
     color:#fff; 
-    height: 45px;
+    height: 55px;
     z-index: 999;
     position: fixed
 } 
