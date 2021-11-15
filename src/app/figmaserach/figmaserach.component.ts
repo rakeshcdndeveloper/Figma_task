@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Figma } from 'src/figma';
+import { ConfigService } from '../config/config.service';
 
 @Component({
   selector: 'app-figmaserach',
@@ -12,29 +13,19 @@ export class FigmaserachComponent implements OnInit {
   configService: any;
   figma: {};
 
-  constructor() { }
+  constructor( private config:ConfigService) { }
 
   showConfig() {
     this.configService.getConfig()
       .subscribe((data: Figma) => this.figma = {
 
       });
-  }
-
-  clickedButton(event){console.log(event)
-    let temp= event.srcElement.parentNode;
-    for(let i = 0; i < temp.childNodes.length; i++){
-      if(temp.childNodes[i].nodeName === 'BUTTON'){
-      if(temp.childNodes[i].classList.contains('active')){
-        temp.childNodes[i].classList.remove('active');
-      }  }
-    }
-    event.srcElement.classList.add('active')
-
-  }
+  }  
 
   ngOnInit(): void {
-  }
-
+    this.configService.getJSON().subscribe(data => {
+      console.log("New Data",data);
+  });
+}
 
 }
