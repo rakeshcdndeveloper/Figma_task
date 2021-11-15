@@ -1,0 +1,123 @@
+<mat-toolbar class="navbaarser card sticky-top">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="col-sm-2">
+    <img src="./assets/images/XCBjUyRgud3s.png">&nbsp;<img src="./assets/images/7dC1eFNW5sC9.png">&nbsp;<img
+      src="./assets/images/kZl9a6Qlbhef.png">
+  </div>
+  <div class="col-sm-6 dropdowntext">
+    <mat-form-field appearance="fill">
+      <select matNativeControl id="mySelectId">
+        <option style="color: #fff;" value="" selected>AML Search</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </mat-form-field>&nbsp; &nbsp;
+    <button mat-raised-button color="white">Ask to edit</button>
+  </div>
+
+  <div class="col-sm-2">
+    <img src="./assets/images/earphone.png">&nbsp;<img src="./assets/images/R.png">&nbsp;<img
+      src="./assets/images/share.png">
+  </div>
+</mat-toolbar>
+<div class="row">
+  <div class="col-sm-2 border leftbar">
+    <mat-form-field appearance="fill">
+      <select matNativeControl id="mySelectId">
+        <option value="page1" selected>Pages</option>
+        <option value="page1">Page 1</option>
+      </select>
+    </mat-form-field>
+    <p class="cursor mb-2" (click)="one.style.border='red'"><img src="./assets/images/hash.png" />&nbsp;Legal Entity
+      Search</p>
+    <p class="cursor mb-2" (click)="two.style.border='red'"><img src="./assets/images/hash.png" />&nbsp;Legal Entity
+      Search</p>
+    <p class="cursor mb-2" href="#three"><img src="./assets/images/hash.png" />&nbsp;Legal Entity Search</p>
+    <p class="cursor mb-2" href="#four"><img src="./assets/images/hash.png" />&nbsp;Legal Entity Search</p>
+    <p class="cursor mb-2" href="#five"><img src="./assets/images/hash.png" />&nbsp;Individual Search Results</p>
+    <p class="cursor mb-2" href="#six"><img src="./assets/images/hash.png" />&nbsp;Individual Search</p>
+    <p class="cursor mb-2" href="#seven"><img src="./assets/images/hash.png" />&nbsp;Corporate Onboarding</p>
+    <p class="cursor mb-2" href="#eight"><img src="./assets/images/hash.png" />&nbsp;Retail AML Searched Onboarding</p>
+  </div>
+  <div class="col-sm-8 border contentbar">
+    <div class="col-sm-4">
+      <p class="reatiltext" style="margin-top: 69px;font-size: 27px;">Retail AML Search and Onboarding</p>
+    </div>
+    <div class="row" style="margin-left: 155px; margin-top: 35px;">
+      <p>Individual Search</p>
+      <div class="col-sm-5 cursor  mb-2 activeHeader" id="one" #one
+        style="height: 200px;width: 250px; border: 1px solid; margin-left: 3px;"><img style="width: 232px; height: 196px;" src="./assets/images/image.png"></div>
+      <p style="    margin-top: -33px;float: left;margin-left: 10px;
+      ;">Individual Search Result</p>
+      <div class="col-sm-5 cursor  mb-2" id="two" #two
+        style="height: 200px;width: 250px;border: 1px solid; margin-left: 8px;"><img style="width: 232px; height: 196px;" src="./assets/images/image.png"></div>
+      <br>
+      <p style="float: right;margin-right:197px; margin-top: 9px;">Legal Entity Search</p>
+      <div class="col-sm-5 cursor  mb-2" id="three"
+        style="height: 200px;width: 250px;border: 1px solid; margin-left: 389px; margin-top: 0px;;"><img style="width: 232px; height: 196px;" src="./assets/images/image.png"></div>
+    </div>
+    <div class="col-sm-4">
+      <p class="reatiltext" style="margin-top: 69px;font-size: 27px;">Corporate Onboarding</p>
+    </div>
+    <div class="row" style="margin-left: 155px; margin-top: 35px;">
+      <p>Legal Entity Search</p>
+      <div class="col-sm-5 cursor  mb-2 activeHeader" id="one" #one
+        style="height: 200px;width: 250px; border: 1px solid; margin-left: 3px;"><img style="width: 232px; height: 196px;" src="./assets/images/image.png"></div>
+      <p style="    margin-top: -33px;float: left;margin-left: 10px;
+    ;">Legal Entity Search</p>
+      <div class="col-sm-5 cursor  mb-2" id="two" #two
+        style="height: 200px;width: 250px;border: 1px solid; margin-left: 8px;"><img style="width: 232px; height: 196px;" src="./assets/images/image.png"></div>
+      <br>
+      <p style="float: right;margin-right:197px; margin-top: 9px;">Legal Entity Search</p>
+      <div class="col-sm-5 cursor  mb-2" id="three"
+        style="height: 200px;width: 250px;border: 1px solid; margin-left: 389px; margin-top: 0px;;"><img style="width: 232px; height: 196px;" src="./assets/images/image.png"></div>
+    </div>
+  </div>
+
+  <!-- Second bar -->
+  <!-- Second -->
+
+  <div class="col-sm-2 border rightbar">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Inspect</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Export</a>
+      </li>
+    </ul><!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="tabs-1" role="tabpanel">
+        Legal Entity Search
+        <hr>
+        Properties
+        <hr>
+        <div class="row">
+          <div class="col-sm-4 text text-muted">Width</div>
+          <div class="col-sm-6">45678</div>
+          <div class="col-sm-4 text text-muted">Height</div>
+          <div class="col-sm-6">45678</div>
+          <div class="col-sm-4 text text-muted">Top</div>
+          <div class="col-sm-6">45678</div>
+          <div class="col-sm-4 text text-muted">Left</div>
+          <div class="col-sm-6">45678</div>
+          <div class="col-sm-4 text text-muted">Bled</div>
+          <div class="col-sm-6">45678</div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-4 text text-muted">Colors</div>
+          <div class="col-sm-6">45678</div>
+          <hr>
+        </div>
+        <div class="tab-pane" id="tabs-2" role="tabpanel">
+          <p>Export</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
