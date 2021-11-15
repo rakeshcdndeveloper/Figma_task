@@ -19,12 +19,13 @@ export class FigmaserachComponent implements OnInit {
     this.configService.getConfig()
       .subscribe((data: Figma) => this.figma = {
 
+
       });
   }  
 
   ngOnInit(): void {
     this.configService.getJSON().subscribe(data => {
-      console.log("New Data",data);
+      // console.log("New Data",data);
   });
 }
 

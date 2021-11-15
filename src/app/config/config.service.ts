@@ -9,14 +9,12 @@ import { Figma } from 'src/figma';
 })
 export class ConfigService {
   configUrl = 'assets/figma.json';
-
   constructor(private http: HttpClient) { 
     this.getConfig().subscribe(data => {
       console.log("Figma Data",data);
   });
   }
- 
- public getConfig() {
+public getConfig() {
     return this.http.get<Figma>(this.configUrl);
   }
 }
